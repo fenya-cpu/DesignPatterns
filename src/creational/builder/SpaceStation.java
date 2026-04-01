@@ -36,12 +36,41 @@ public class SpaceStation {
         private int weaponBays = 0;
         private String lifeSupportSystemLevel = "Basic";
 
-        public Builder setStationName(String name) { this.stationName = name; return this; }
-        public Builder setCrewCapacity(int capacity) { this.crewCapacity = capacity; return this; }
-        public Builder setShieldStrength(double strength) { this.shieldStrength = strength; return this; }
-        public Builder enableHyperdrive() { this.hasHyperdrive = true; return this; }
-        public Builder setWeaponBays(int count) { this.weaponBays = count; return this; }
-        public Builder setLifeSupport(String level) { this.lifeSupportSystemLevel = level; return this; }
+        public Builder setStationName(String name)
+        {
+            this.stationName = name;
+            return this;
+        }
+
+        public Builder setCrewCapacity(int capacity)
+        {
+            this.crewCapacity = capacity;
+            return this;
+        }
+
+        public Builder setShieldStrength(double strength)
+        {
+            this.shieldStrength = strength;
+            return this;
+        }
+
+        public Builder enableHyperdrive()
+        {
+            this.hasHyperdrive = true;
+            return this;
+        }
+
+        public Builder setWeaponBays(int count)
+        {
+            this.weaponBays = count;
+            return this;
+        }
+
+        public Builder setLifeSupport(String level)
+        {
+            this.lifeSupportSystemLevel = level;
+            return this;
+        }
 
         public SpaceStation build() {
             return new SpaceStation(this);

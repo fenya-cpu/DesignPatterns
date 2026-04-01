@@ -20,6 +20,6 @@ public class IronAsteroid implements Asteroid {
 
     @Override
     public double calculateValue() {
-        return massTons * (ironPurityPercentage / 100) * 500.0; // Ціна заліза
+        return massTons * (ironPurityPercentage / 100) * 500.0;
     }
 }

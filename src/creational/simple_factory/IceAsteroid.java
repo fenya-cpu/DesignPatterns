@@ -20,6 +20,6 @@ public class IceAsteroid implements Asteroid {
 
     @Override
     public double calculateValue() {
-        return waterVolumeCubeMeters * 1.5; // Ціна води
+        return waterVolumeCubeMeters * 1.5;
     }
 }

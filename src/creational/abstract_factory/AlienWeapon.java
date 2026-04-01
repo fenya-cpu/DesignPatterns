@@ -15,5 +15,7 @@ public class AlienWeapon implements Weapon {
     }
 
     @Override
-    public double getDamageOutput() { return radiationLevel * 3.14; }
+    public double getDamageOutput() {
+        return radiationLevel * 3.14;
+    }
 }

@@ -10,8 +10,12 @@ public class AlienEngine implements Engine {
     }
 
     @Override
-    public void ignite() { System.out.println("Скривлення простору активовано. Темна матерія: " + usesDarkMatter); }
+    public void ignite() {
+        System.out.println("Скривлення простору активовано. Темна матерія: " + usesDarkMatter);
+    }
 
     @Override
-    public double getMaxThrust() { return warpSignature * 1000.0; }
+    public double getMaxThrust() {
+        return warpSignature * 1000.0;
+    }
 }

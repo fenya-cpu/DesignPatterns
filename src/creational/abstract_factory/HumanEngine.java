@@ -10,8 +10,12 @@ public class HumanEngine implements Engine {
     }
 
     @Override
-    public void ignite() { System.out.println("Запуск термоядерного реактора на паливі: " + fuelType); }
+    public void ignite() {
+        System.out.println("Запуск термоядерного реактора на паливі: " + fuelType);
+    }
 
     @Override
-    public double getMaxThrust() { return thrustPower; }
+    public double getMaxThrust() {
+        return thrustPower;
+    }
 }

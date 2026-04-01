@@ -1,5 +1,4 @@
 package creational.prototype;
-import java.util.Objects;
 
 public class SpaceDrone implements Prototype {
     private final String model;
@@ -16,30 +15,6 @@ public class SpaceDrone implements Prototype {
         this.isArmed = isArmed;
     }
 
-    public String getModel() { return model; }
-    public double getMaxSpeed() { return maxSpeed; }
-    public double getCargoCapacity() { return cargoCapacity; }
-    public int getBatteryLevel() { return batteryLevel; }
-    public void setBatteryLevel(int batteryLevel) { this.batteryLevel = batteryLevel; }
-    public boolean isArmed() { return isArmed; }
-    public void setArmed(boolean armed) { isArmed = armed; }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        SpaceDrone that = (SpaceDrone) o;
-        return Double.compare(that.maxSpeed, maxSpeed) == 0 &&
-                Double.compare(that.cargoCapacity, cargoCapacity) == 0 &&
-                batteryLevel == that.batteryLevel &&
-                isArmed == that.isArmed &&
-                Objects.equals(model, that.model);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(model, maxSpeed, cargoCapacity, batteryLevel, isArmed);
-    }
 
     @Override
     public Prototype doClone() {
@@ -48,6 +23,12 @@ public class SpaceDrone implements Prototype {
 
     @Override
     public String toString() {
-        return "SpaceDrone{model='" + model + "', speed=" + maxSpeed + ", cargo=" + cargoCapacity + ", battery=" + batteryLevel + "%, armed=" + isArmed + "}";
+        return "SpaceDrone{" +
+                "model='" + model + '\'' +
+                ", speed=" + maxSpeed +
+                ", cargo=" + cargoCapacity +
+                ", battery=" + batteryLevel +
+                "%, armed=" + isArmed +
+                '}';
     }
 }

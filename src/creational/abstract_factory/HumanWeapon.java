@@ -17,5 +17,7 @@ public class HumanWeapon implements Weapon {
     }
 
     @Override
-    public double getDamageOutput() { return damagePerRound * 1.5; }
+    public double getDamageOutput() {
+        return damagePerRound * 1.5;
+    }
 }
