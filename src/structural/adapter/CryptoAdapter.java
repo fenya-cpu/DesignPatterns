@@ -10,7 +10,7 @@ public class CryptoAdapter implements UAPayment {
     @Override
     public void payInUAH(double amount) {
         double btc = amount / 100000.0;
-        System.out.print("Адаптер конвертує " + amount + " грн у криптовалюту... ");
+        System.out.print("Адаптер конвертує " + amount + " грн у криптовалюту");
         wallet.sendBitcoin(btc);
     }
 }
