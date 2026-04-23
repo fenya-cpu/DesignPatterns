@@ -9,8 +9,12 @@ public abstract class BeverageMaker {
         addCondiments();
     }
 
-    private void boilWater() { System.out.println("Кип'ятимо воду..."); }
-    private void pourInCup() { System.out.println("Наливаємо в чашку..."); }
+    private void boilWater() {
+        System.out.println("Кип'ятимо воду");
+    }
+    private void pourInCup() {
+        System.out.println("Наливаємо в чашку");
+    }
 
     protected abstract void brew();
     protected abstract void addCondiments();

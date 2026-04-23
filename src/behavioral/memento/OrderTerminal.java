@@ -12,12 +12,10 @@ public class OrderTerminal {
         System.out.println("Термінал: Поточне замовлення -> " + currentOrder);
     }
 
-    // Зберегти стан
     public OrderSnapshot save() {
         return new OrderSnapshot(currentOrder);
     }
 
-    // Відновити стан
     public void restore(OrderSnapshot snapshot) {
         this.currentOrder = snapshot.getOrderDetails();
         System.out.println("Термінал: ДІЮ СКАСОВАНО! Поточне замовлення -> " + currentOrder);

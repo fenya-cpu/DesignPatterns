@@ -4,7 +4,9 @@ public class Order {
     private double totalAmount;
     private PaymentStrategy paymentStrategy;
 
-    public Order(double totalAmount) { this.totalAmount = totalAmount; }
+    public Order(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
 
     public void setPaymentStrategy(PaymentStrategy strategy) {
         this.paymentStrategy = strategy;

@@ -82,7 +82,7 @@ public class BehavioralMain {
         //STRATEGY
         System.out.println("\nПатерн STRATEGY");
         Order myOrder = new Order(250.0);
-        myOrder.setPaymentStrategy(new CardPayment());
+        //myOrder.setPaymentStrategy(new CardPayment());
         myOrder.processPayment();
 
         //TEMPLATE METHOD

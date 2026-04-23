@@ -8,7 +8,7 @@ public class Barista {
     }
 
     public void startMakingCoffee() {
-        System.out.println("Бариста: Роблю каву...");
+        System.out.println("Бариста: Роблю каву");
         mediator.notify(this, "COFFEE_READY");
     }
 }
